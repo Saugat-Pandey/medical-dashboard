@@ -1,3 +1,41 @@
+# Medical Dashboard
+
+A React dashboard for reviewing patient records, built as a university project for a
+human-computer interaction course.
+
+## What it does
+
+The app opens on a dashboard, with a sidebar for moving between pages. Patients are
+clickable wherever they appear and each one leads to their own detail page.
+
+**Patient detail** is built around a timeline of the patient's history. Clicking a point
+on it opens an overlay with the full event. The coloured buttons above the timeline
+("Medikament", "Lab", and so on) work as both a legend and a filter, and the visible range
+can be narrowed by date. "Add Event" adds a new entry, which appears on the timeline
+straight away.
+
+**Notes** are split into previous notes and a new note. Anything typed is held if you
+navigate away before saving, and saved notes can be reopened, edited or deleted.
+
+**Overview** tracks the most recent diagnoses, medications and allergies, and new
+allergies can be added inline.
+
+## Running it
+
+```bash
+npm install
+npm run dev
+```
+
+Patient data ships as static JSON files, so there is no backend to set up.
+
+Built with React, Vite and Recharts, with react-router-dom for routing and
+react-datepicker for date input.
+
+---
+
+*The original German documentation follows.*
+
 # Anweisungen zur Installation:
 1. Die Daten sind in JSON-Dateien im Projekt enthalten. Notwendige Module können mit npm install installiert werden. Die App kann mit npm run dev gestartet werden.
 2. Alternativ können die Module mit folgenden Befehlen installiert werden:
